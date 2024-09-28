@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Расчет суммы заказа</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Расчет суммы заказа в ресторане</h1>
+      <label for="userSumma">Введите сумму заказа (сом):</label>
+      <input type="number" id="userSumma" placeholder="Сумма заказа" required />
+
+      <label for="tip">Введите процент чаевых:</label>
+      <input type="number" id="tip" placeholder="Процент чаевых" required />
+
+      <button onclick="calculateTotal()">Рассчитать итоговую сумму</button>
+
+      <div id="result" class="result"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
